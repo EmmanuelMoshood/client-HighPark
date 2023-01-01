@@ -39,7 +39,7 @@ body{
     height: 75px;
 }
 .home-hero-image{
-    background-image: url(../assets/Project-images/sample_hero-image.jpg);
+    background-image: url(/assets/Project-images/sample_hero-image.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: calc(54vh - 47px - 50px);
@@ -94,7 +94,7 @@ a {
     background-image: url(../assets/Project-images/JASMINE-VILLA/V1\ 12\ Cinema.jpg);
 }
 #card-image-8{
-    background-image: url(../assets/Project-images/THE-ARK/TRILEX\ MAIN\ BEDROOM.jpg);
+    background-image: url(/assets/Project-images/VILLA-O/22.jpg);
 }
 .card-text{
     position:absolute;
@@ -119,15 +119,16 @@ a {
 #home-map{
     margin-top: 30px;
     margin-bottom: 60px;
+    height: 70vh;
+    /* outline: #1a1a1a 2px solid; */
 }
 .map-text{
-    height: 70vh;
     background-image: url(https://www.arrcc.com/wp-content/uploads/2020/11/map-white-50.png);
     background-size: cover;
     justify-content: center;
 }
 .map-text p{
-    font-size: 34px;
+    font-size: 18px;
     line-height: 38px;
     text-align: center;
     font-weight: 400;
