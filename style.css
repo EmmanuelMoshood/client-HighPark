@@ -39,7 +39,7 @@ body{
     height: 75px;
 }
 .home-hero-image{
-    background-image: url(/assets/Project-images/sample_hero-image.jpg);
+    background-image: url(https://i.ibb.co/SB7BQMB/sample-hero-image.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: calc(54vh - 47px - 50px);
@@ -73,28 +73,28 @@ a {
     height: 420px;
 }
 #card-image-1{
-    background-image: url(../assets/Project-images/INTEGRITY-TOWER/BEDR00M\ 1.jpg);
+    background-image: url(https://i.ibb.co/RyD0Mbn/MASTERS-BEDRM-2.jpg);
 }
 #card-image-2{
-    background-image: url(../assets/Project-images/JASMINE-VILLA/V1\ 11\ Gym.jpg);
+    background-image: url(https://i.ibb.co/hgg8brv/BEDRM-2.jpg);
 }
 #card-image-3{
-    background-image: url(../assets/Project-images/THE-ARK/LOGGIA.jpg);
+    background-image: url(https://i.ibb.co/1zyQnTb/CLOSET.jpg);
 }
 #card-image-4{
-    background-image: url(../assets/Project-images/VILLA-M/LIVING_1.jpg);
+    background-image: url(https://i.ibb.co/4sHvYTH/BEDR00-M-1.jpg);
 }
 #card-image-5{
-    background-image: url(../assets/Project-images/VILLA-O/06\ copy.jpg);
+    background-image: url(https://i.ibb.co/sFtjCXk/DINING-LOOKING-TOWARDS-KITCHEN.jpg);
 }
 #card-image-6{
-    background-image: url(../assets/Project-images/INTEGRITY-TOWER/DINING\ \(LOOKING\ TOWARDS\ KITCHEN\).jpg);
+    background-image: url(https://i.ibb.co/XtH6TDj/KITCHEN.jpg);
 }
 #card-image-7{
-    background-image: url(../assets/Project-images/JASMINE-VILLA/V1\ 12\ Cinema.jpg);
+    background-image: url(https://i.ibb.co/wgL42ZL/FAMILY-LOUNGE.jpg);
 }
 #card-image-8{
-    background-image: url(/assets/Project-images/VILLA-O/22.jpg);
+    background-image: url(https://i.ibb.co/gvsx5S3/MASTERS-BEDRM-1.jpg);
 }
 .card-text{
     position:absolute;
@@ -118,14 +118,17 @@ a {
 /* map-section */
 #home-map{
     margin-top: 30px;
-    margin-bottom: 60px;
-    height: 70vh;
+    margin-bottom: 60px;    
+    
     /* outline: #1a1a1a 2px solid; */
 }
 .map-text{
     background-image: url(https://www.arrcc.com/wp-content/uploads/2020/11/map-white-50.png);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    height: 40vh;
 }
 .map-text p{
     font-size: 18px;
@@ -151,11 +154,19 @@ h3{
 
 /* MEDIA QUERY FOR LARGER SCREENS */
 @media (min-width: 1200px) {
-    /* Styles for large screens >1200px wide */
+    /* Styles for large screens >= 1200px wide */
     .home-hero-image{
-        background-image: url(../assets/Project-images/sample_hero-image.jpg);
+        background-image: url(https://i.ibb.co/SB7BQMB/sample-hero-image.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         height: calc(100vh - 47px - 50px);
+    }
+    #home-map{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        height: 70vh;
+        
+        
+        /* outline: #1a1a1a 2px solid; */
     }
   }
