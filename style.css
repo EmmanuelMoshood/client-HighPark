@@ -83,10 +83,10 @@ main{
     height: 75px;
 }
 .home-hero-image{
-    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/20%20copy.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/16%20copy.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 00px -50px, center;
+    background-position: 00px -400px, center;
     height: calc(100vh - 47px - 50px);
     /* outline: 2px solid black; */
     /* object-fit: contain; */
@@ -235,10 +235,10 @@ input[type="radio"] {
 @media (min-width: 1200px) {
     /* Styles for large screens >= 1200px wide */
     .home-hero-image{
-        background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/20%20copy.jpg);
+        background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/16%20copy.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
-        top: -50%;
+        background-position: 00px -540px, center;
         height: calc(100vh - 47px - 50px);
     }
     #home-map{
