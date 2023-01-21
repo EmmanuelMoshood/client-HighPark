@@ -1,7 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
 body{
     /* display: none; */
     color: #1a1a1a;
-    font-family: "DM Sans",sans-serif;
+    font-family: "Futura",sans-serif;
+    overflow-x: hidden;
+}
+main{
+    transition: transform 0.2s;
 }
 
 
@@ -9,8 +18,13 @@ body{
 .navbar{
     padding:0 ;
     position: fixed;
-    z-index: 501;
-    
+    z-index: 501;  
+}
+.menu-div{
+    margin-left: 5px;
+}
+.contact-div{
+    margin-right: 5px;
 }
 .align-items-center{
     align-items: center;
@@ -24,7 +38,7 @@ body{
     color: black;  
 }
 .link a{
-    font-weight: 500;
+    font-weight: 700;
 }
 .home-hero-project-name{
     margin: 1rem ;
@@ -33,13 +47,43 @@ body{
     cursor: pointer;
 }
 
+/* MENU PAGE OPEN  */
+.menu-page{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 502;
+    background-color: #ffffff;
+    transform: translateX(-150vw);
+    transition: transform 0.2s;
+}
+.menu-links-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+.menu-page-link{
+    font-size: 56px;
+    font-weight: 500px  !important;
+}
+.menu-open .menu-page{
+    transform: translateX(0vw);
+}
+.close-btn{
+    cursor: pointer;
+}
+
+/* NAVBAR --icons  */
+.bi-x{
+    font-size: 24px;
+}
 
 /* HERO SECTIONS  */
 #empty-div1{
     height: 75px;
 }
 .home-hero-image{
-    background-image: url(https://i.ibb.co/SB7BQMB/sample-hero-image.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/sample_hero-image.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: calc(54vh - 47px - 50px);
@@ -73,28 +117,29 @@ a {
     height: 420px;
 }
 #card-image-1{
-    background-image: url(https://i.ibb.co/RyD0Mbn/MASTERS-BEDRM-2.jpg);
-}
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/5%20copy.jpg);
+}  
+/* https://emmanuelmoshood.github.io/client-HighPark/ */
 #card-image-2{
-    background-image: url(https://i.ibb.co/hgg8brv/BEDRM-2.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/INTEGRITY-TOWER/LIVING%205.jpg);
 }
 #card-image-3{
-    background-image: url(https://i.ibb.co/1zyQnTb/CLOSET.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-M/LIVING_7.jpg);
 }
 #card-image-4{
-    background-image: url(https://i.ibb.co/4sHvYTH/BEDR00-M-1.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/THE-ARK/TRIPLEX%20LIVING_2.jpg);
 }
 #card-image-5{
-    background-image: url(https://i.ibb.co/sFtjCXk/DINING-LOOKING-TOWARDS-KITCHEN.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/JASMINE-VILLA/V1%202%20Living.jpg);
 }
 #card-image-6{
-    background-image: url(https://i.ibb.co/XtH6TDj/KITCHEN.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/JASMINE-VILLA/V1%204%20Family%20Lounge.jpg);
 }
 #card-image-7{
-    background-image: url(https://i.ibb.co/wgL42ZL/FAMILY-LOUNGE.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/9%20copy.jpg);
 }
 #card-image-8{
-    background-image: url(https://i.ibb.co/gvsx5S3/MASTERS-BEDRM-1.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/JASMINE-VILLA/V2%209%20Family%20Lounge.jpg);
 }
 .card-text{
     position:absolute;
@@ -152,21 +197,53 @@ h3{
     font-weight: 700;
 }
 
+
+
+/* PROJECTS  */
+
+input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    margin-right: 3px;
+    background-clip: content-box;
+    border: 1px solid #bbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+  }
+  
+  input[type="radio"]:checked + label:before {
+    background-color: #000000;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+  }
+  
+
 /* MEDIA QUERY FOR LARGER SCREENS */
 @media (min-width: 1200px) {
     /* Styles for large screens >= 1200px wide */
     .home-hero-image{
-        background-image: url(https://i.ibb.co/SB7BQMB/sample-hero-image.jpg);
+        background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/sample_hero-image.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         height: calc(100vh - 47px - 50px);
     }
     #home-map{
         margin-top: 30px;
-        margin-bottom: 60px;
+        margin-bottom: -198px;
         height: 70vh;
-        
-        
         /* outline: #1a1a1a 2px solid; */
+    }
+    footer{
+        margin-bottom: 20px;
     }
   }

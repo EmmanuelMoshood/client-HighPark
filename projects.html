@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- high park's main css -->
+    <link href="./style.css" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
+</head>
+
+<body>
+    <!-- MENU AND NAVBAR COPIED FROM THE HOME PAGE  -->
+    <main>
+
+            <!--  when menu page opens -->
+            <nav class="menu-page "> <!--menu-open class is added here by main.js -->
+                <div class="container-fluid top-bar d-flex align-items-center mt-3 px-4">
+                    <div class="col close-btn" onclick="toggleNav()">
+                        <div class="menu-close d-flex align-items-center justify-item-center link">
+                            <i class="bi bi-x"></i>
+                            <a href="" class="nav-page-link">CLOSE</a>
+                        </div>
+                    </div>
+                    <div class="col text-end link px-4">
+                        <a href="" class="contact-link">CONTACT</a>
+                    </div>
+                </div>
+                
+                <section class="menu-page d-flex mt-5">
+    
+                    <!-- left side of the menu page  -->
+                <div class="menu-page-right menu-links-container link col-md-6 ">
+                    <a href="./about.html" class="menu-page-link">ABOUT US</a>
+                    <a href="./projects.html" class="menu-page-link">PROJECTS</a>
+                    <!-- <a href="" class="menu-page-link">NEWS</a> -->
+                    <!-- <a href="" class="menu-page-link">AWARDS</a> -->
+                    <!-- <a href="" class="menu-page-link">CAREERS</a> -->
+                    <a href="./contact.html" class="menu-page-link">CONTACT</a>
+                </div>
+    
+    
+                    <!-- right side of the menu page  -->
+                    <div class="menu-page-left col px-5">
+                        <div class="get-intouch-or-connent col d-flex">
+                       
+                            <div class="get-intouch me-5">
+                                <h3>Get in touch</h3>
+        
+                                <div class="menu-telephone-and-email">
+                                    <div>
+                                        T. <a href="tel:+27214684400">+27 21 468 4400</a>
+                                    </div>
+                                    <div>
+                                        E. <a href="mailto:info@arrcc.com">info@arrcc.com</a>
+                                    </div>
+                                </div>
+        
+                                <div class="menu-address">
+                                    20 Omole<br>   
+                                    Phase 2 Extension<br>
+                                    100214<br>
+                                    Lagos.
+                                </div> 
+                            </div>
+        
+                            <div class="connect">
+                                <h3>Connect</h3>
+        
+                                    <div class="menu-connect-content">
+                                        <div>
+                                            <a href="https://www.facebook.com/arrccmedia/" target="_blank">
+                                                Facebook
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.instagram.com/_arrcc/" target="_blank">
+                                                Instagram
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.linkedin.com/company/arrcc-design/" target="_blank">
+                                                Linkedin
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://za.pinterest.com/arrccdesign/" target="_blank">
+                                                Pinterest
+                                            </a>
+                                        </div>
+                                    </div><!--.connect-content-->
+                            </div>
+                        </div>
+    
+                        <!-- carosel of the images under get-intouch & connect  -->
+                        <div class="carousel-container mt-4">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                            
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./assets/Project-images/JASMINE-VILLA/V2 6 Living.jpg" class="d-block w-100" alt="img-1">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/Project-images/THE-ARK/TRIPLEX LIVING_2.jpg" class="d-block w-100" alt="img-2">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/Project-images/VILLA-M/LIVING_12.jpg" class="d-block w-100" alt="img-3">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+    
+                </section>
+            </nav>
+            <!--  when menu page opens --end -->
+    
+            <!-- NAVBAR  -->
+            <nav class="navbar container-fluid bg-light link align-items-center px-4">
+                
+                    
+                        <!-- menu toggle-->
+                        <div class="col menu-div" >
+                            <a href="#" id="menu-link" class="menu-image" onclick="toggleNav()"><i class="bi bi-list"></i>MENU</a>
+                        </div>
+                        <!--The Center Logo-->
+                        <div class="col-6 link text-center" id="logo">
+                            <a href="./index.html" id="home-link">HIGH PARK</a></div>
+                        <!-- contact -->
+                        <div class="col link text-end contact-div">
+                            <a href="./contact.html" id="contac-link ">CONTACT</a>
+                        </div>
+                    
+                </div>
+            </nav>   
+
+    </main>
+    <!-- PROJECTS_filters  -->
+    <div class="space-underNav" style="height: 86px;"></div>
+    <section class="md px-4 title-text col-12 row mb-5">
+        <div class="col-md-4">
+            <h1>PROJECTS</h1>
+        </div>
+        <!-- filters  -->
+        <!-- <div class="filter-container col-md-8  d-flex align-content-center flex-wrap "> -->
+            <div class="filter-container col-md-8 d-flex align-content-center flex-wrap text-end">
+                <input type="radio" id="all" name="radio" checked="true">
+                <label class="px-2" for="all">All</label>
+            
+                <input type="radio" name="radio" id="residential"  />
+                <label class="px-2" for="residential">Residential</label>
+                                
+                <input type="radio" name="radio" id="hospitality&leisure" />
+                <label class="px-2" for="hospitality&leisure">Hospitality & Leisure</label>
+                                
+                <input type="radio" name="radio" id="commercial&retail" />
+                <label class="px-2" for="commercial&retail">Commercial & Retail</label>
+            </div>
+        <!-- </div> -->
+    </section>
+
+    <!-- Gallery section  -->
+    <section class="row gallery">
+        <!-- FEATURED PROJECT - 1 -->
+        <div class="col-md-6 col-12 col-sm-6 col-lg-4 col-xl-3 featured-project-card">
+            <a href="#">
+                <div class="card-image" id="card-image-1">
+                </div>
+                <div class="card-text">
+                    <div class="card-text-title">
+                        Integrity tower                        
+                    </div>
+                    <div class="card-text-sub-title">
+                        Lagos State, Nigeria                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- FEATURED PROJECT - 2 -->
+        <div class="col-md-6 col-12 col-sm-6 col-lg-4 col-xl-3 featured-project-card">
+            <a href="#">
+                <div class="card-image" id="card-image-2">
+                </div>
+                <div class="card-text">
+                    <div class="card-text-title">
+                        Integrity tower                        
+                    </div>
+                    <div class="card-text-sub-title">
+                        Lagos State, Nigeria                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- FEATURED PROJECT - 3 -->
+        <div class="col-md-6 col-12 col-sm-6 col-lg-4 col-xl-3 featured-project-card">
+            <a href="#">
+                <div class="card-image" id="card-image-3">
+                </div>
+                <div class="card-text">
+                    <div class="card-text-title">
+                        Integrity tower                        
+                    </div>
+                    <div class="card-text-sub-title">
+                        Lagos State, Nigeria                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- FEATURED PROJECT - 4 -->
+        <div class="col-md-6 col-12 col-sm-6 col-lg-4 col-xl-3 featured-project-card">
+            <a href="#">
+                <div class="card-image" id="card-image-4">
+                </div>
+                <div class="card-text">
+                    <div class="card-text-title">
+                        Integrity tower                        
+                    </div>
+                    <div class="card-text-sub-title">
+                        Lagos State, Nigeria                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- FEATURED PROJECT - 5 -->
+        <div class="col-md-6 col-12 col-sm-6 col-lg-4 col-xl-3 featured-project-card">
+            <a href="#">
+                <div class="card-image" id="card-image-5">
+                </div>
+                <div class="card-text">
+                    <div class="card-text-title">
+                        Integrity tower                        
+                    </div>
+                    <div class="card-text-sub-title">
+                        Lagos State, Nigeria                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- FEATURED PROJECT - 6 -->
+        <div class="col-md-6 col-12 col-sm-6 col-lg-4 col-xl-3 featured-project-card">
+            <a href="#">
+                <div class="card-image" id="card-image-6">
+                </div>
+                <div class="card-text">
+                    <div class="card-text-title">
+                        Integrity tower                        
+                    </div>
+                    <div class="card-text-sub-title">
+                        Lagos State, Nigeria                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- FEATURED PROJECT - 7 -->
+        <div class="col-md-6 col-12 col-sm-6 col-lg-4 col-xl-3 featured-project-card">
+            <a href="#">
+                <div class="card-image" id="card-image-7">
+                </div>
+                <div class="card-text">
+                    <div class="card-text-title">
+                        Integrity tower                        
+                    </div>
+                    <div class="card-text-sub-title">
+                        Lagos State, Nigeria                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- FEATURED PROJECT - 8 -->
+        <div class="col-md-6 col-12 col-sm-6 col-lg-4 col-xl-3 featured-project-card">
+            <a href="#">
+                <div class="card-image" id="card-image-8">
+                </div>
+                <div class="card-text">
+                    <div class="card-text-title">
+                        Integrity tower                        
+                    </div>
+                    <div class="card-text-sub-title">
+                        Lagos State, Nigeria                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+     <!-- FOOTER  -->
+     <footer>
+        <div class="container mt-5">
+    
+    
+            <!--Footer Content Row-->
+            <div class="row footer-content-row">
+    
+                <!--newsletter-->
+                <div class="col-12 col-lg-4 footer-col footer-newsletter-col">
+    
+                    <h3>We will love to hear from you</h3>
+    
+                    <div id="rh-wpforms-newsletter-subscribe">
+                    </div>
+    
+                </div>
+    
+    
+                <!--get in touch-->
+                <div class="col-4 col-lg-3 footer-col footer-get-in-touch-col footer-expanded">
+    
+                    <h3>Get in touch</h3>
+    
+                    <div class="footer-col-content">
+    
+                        <div class="footer-telephone-and-email hover-border-bottom-black">
+                            <div>
+                                T. <a href="tel:+2348156309890">+234 815 630 9890</a>
+                            </div>
+                            <div>
+                                E. <a href="Dolapofadipe@highpark.in">Dolapofadipe@highpark.in</a>
+                            </div>
+                        </div><!--.telephone-and-email-->
+                        <br></br>
+                        <div class="footer-address">
+                            20 Omole <br>
+                            Phase 2 Extension,<br>
+                            100214, Lagos.<br>
+                            Nigeria
+                        </div>
+    
+    
+                        
+    
+                    </div><!--.footer-col-content-->
+    
+                </div><!--.footer-get-in-touch-col-->
+    
+    
+                <!--connect-->
+                <div class="col-4 col-lg-2 footer-col footer-connect-col">
+    
+                    <h3>Connect</h3>
+    
+                    <div class="footer-col-content connect-content hover-border-bottom-black">
+                        <div>
+                            <a href="#" target="_blank">
+                                Facebook
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" target="_blank">
+                                Instagram
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" target="_blank">
+                                Linkedin
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" target="_blank">
+                                Pinterest
+                            </a>
+                        </div>
+                    </div><!--.connect-content-->
+    
+                </div><!--.footer-connect-col-->
+    
+    
+                <!--careers-->
+                <div class="col-4 col-lg-3 footer-col footer-careers-col">
+    
+                    <h3>Careers</h3>
+    
+                    <div class="footer-col-content footer-careers-content">
+    
+                        <div class="footer-careers-email hover-border-bottom-black">
+                            <a href="mailto:Dolapofadipe@highpark.in" target="_top">
+                                Dolapofadipe@highpark.in
+                            </a>
+                        </div>
+    
+                        <!--view map link-->
+                        <!-- <div class="footer-career-link link-with-dash">
+                            <a href="#">
+                                <img src="#" alt="dash"/>  See all open positions
+                            </a>
+                        </div> -->
+    
+                    </div><!--.footer-col-content.footer-careers-content-->
+    
+                </div><!--.footer-careers-col .col-md-3-->
+    
+            </div><!--.row.footer-content-row-->
+    
+    
+            <!--Colophon-->
+            <div class="row colophon-row">
+    
+                <!--colophon info-->
+                <div class="col-md-7 site-info-col order-2 order-md-1">
+                    &copy; HIGHPARK 2022 <span><br class="mobile-break"><a href="#" class="d-none">Terms & Conditions</a> <span class="d-none d-sm-inline-block">|</span> <a href="#">Privacy Policy</a></span>
+                </div><!--.col-12-->
+    
+               
+    
+            </div><!--.row-->
+    
+    
+        </div><!--.container-->
+    
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
+    <script src="./main.js"></script>
+    
+    <script>
+        function toggleNav() {
+            console.log("internal")
+            document.body.classList.toggle("menu-open");
+        }
+    </script>
+</body>
+</html>
