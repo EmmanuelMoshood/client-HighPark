@@ -83,10 +83,11 @@ main{
     height: 75px;
 }
 .home-hero-image{
-    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/sample_hero-image.jpg);
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/20%20copy.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: calc(54vh - 47px - 50px);
+    background-position: 00px -50px, center;
+    height: calc(100vh - 47px - 50px);
     /* outline: 2px solid black; */
     /* object-fit: contain; */
 }
@@ -98,6 +99,7 @@ main{
     max-width: 100%;
     font-weight: 600;
 }
+
 
 /* FEATURE PROJECTS */
 .featured-project-card{
@@ -162,8 +164,9 @@ a {
 
 /* map-section */
 #home-map{
-    margin-top: 30px;
-    margin-bottom: 60px;    
+    margin-top: 130px;   
+        margin-bottom: 58px;
+        height: 70vh;
     
     /* outline: #1a1a1a 2px solid; */
 }
@@ -173,7 +176,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40vh;
+    height: 70vh;
 }
 .map-text p{
     font-size: 18px;
@@ -232,9 +235,10 @@ input[type="radio"] {
 @media (min-width: 1200px) {
     /* Styles for large screens >= 1200px wide */
     .home-hero-image{
-        background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/sample_hero-image.jpg);
+        background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/20%20copy.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
+        top: -50%;
         height: calc(100vh - 47px - 50px);
     }
     #home-map{
@@ -247,3 +251,47 @@ input[type="radio"] {
         margin-bottom: 20px;
     }
   }
+
+
+
+
+
+
+
+
+
+  /* ------------------------------------------------------------------------------------------PROJECT-PAGES --------------------------------------------------------------------------------- */
+  .project-intro-text h2 {
+    margin-top: 6rem;
+    text-transform: uppercase;
+    font-size: 70px;
+    width: 555px;
+    line-height: 80px;
+    max-width: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.project-body-text{
+    max-width: 600px;
+}
+ .project-subtitle{
+    margin: auto;
+}
+.projects-carousel{
+    max-width: 900px;
+    margin: auto;
+}
+#hero-image-project1{
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/5%20copy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: cover;
+    background-position: 00px -50px, center;
+    /* top: 500px; */
+    height: calc(100vh - 0px - 0px);
+    max-width: 550px;
+    margin: auto;
+}
