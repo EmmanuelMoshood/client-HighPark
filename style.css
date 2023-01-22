@@ -248,15 +248,13 @@ input[type="radio"] {
         /* outline: #1a1a1a 2px solid; */
     }
 
-
-    #hero-image-project1{
-        background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/5%20copy.jpg);
+    .project-hero-image{
         background-repeat: no-repeat;
         background-size: 100%;
         background-image: cover;
         background-position: 00px -50px, center;
         /* top: 500px; */
-        height: calc(100vh - 0px - 0px);
+        height: 500px;
         max-width: 550px;
         margin: auto;
     }
@@ -299,7 +297,6 @@ input[type="radio"] {
     margin: auto;
 }
 #hero-image-project1{
-    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/5%20copy.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: cover;
@@ -309,3 +306,27 @@ input[type="radio"] {
     max-width: 550px;
     margin: auto;
 }
+#hero-image-project1{
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/5%20copy.jpg);
+}
+#hero-image-project2{
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/INTEGRITY-TOWER/LIVING%205.jpg);
+}
+#hero-image-project3{
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-M/LIVING_7.jpg);
+}
+#hero-image-project4{
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/THE-ARK/TRIPLEX%20LIVING_2.jpg);
+}
+#hero-image-project5{
+    background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/JASMINE-VILLA/V1%202%20Living.jpg);
+}
+
+
+.carousel-inner{
+    max-width: 50vw;
+    max-height: 100vh;
+    margin: auto;
+}
+
+
