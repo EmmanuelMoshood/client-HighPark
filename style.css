@@ -30,7 +30,7 @@ main{
     align-items: center;
 }
 #home-link{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
 }
 .link a, .home-hero-project-name a {
@@ -230,8 +230,15 @@ input[type="radio"] {
     align-items: center;
   }
   
+/* ============================  MEDIA QUERY FOR PHONE SCREENS ==============================================*/
+@media (max-width: 400px){
+    #home-link{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
 
-/* MEDIA QUERY FOR LARGER SCREENS */
+/* ============================  MEDIA QUERY FOR LARGER SCREENS ==============================================*/
 @media (min-width: 1200px) {
     /* Styles for large screens >= 1200px wide */
     .home-hero-image{
@@ -258,7 +265,10 @@ input[type="radio"] {
         max-width: 550px;
         margin: auto;
     }
-
+    #home-link{
+        font-size: 50px;
+        font-weight: 600;
+    }
     footer{
         margin-bottom: 20px;
     }
@@ -294,6 +304,16 @@ input[type="radio"] {
 }
 .projects-carousel{
     max-width: 900px;
+    margin: auto;
+}
+.project-hero-image{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: cover;
+    background-position: 00px -50px, center;
+    /* top: 500px; */
+    height: 500px;
+    max-width: 550px;
     margin: auto;
 }
 #hero-image-project1{
