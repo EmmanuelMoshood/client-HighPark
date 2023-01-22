@@ -247,6 +247,20 @@ input[type="radio"] {
         height: 70vh;
         /* outline: #1a1a1a 2px solid; */
     }
+
+
+    #hero-image-project1{
+        background-image: url(https://emmanuelmoshood.github.io/client-HighPark/assets/Project-images/VILLA-O/5%20copy.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: cover;
+        background-position: 00px -50px, center;
+        /* top: 500px; */
+        height: calc(100vh - 0px - 0px);
+        max-width: 550px;
+        margin: auto;
+    }
+
     footer{
         margin-bottom: 20px;
     }
@@ -291,7 +305,7 @@ input[type="radio"] {
     background-image: cover;
     background-position: 00px -50px, center;
     /* top: 500px; */
-    height: calc(100vh - 0px - 0px);
+    height: 500px;
     max-width: 550px;
     margin: auto;
 }
